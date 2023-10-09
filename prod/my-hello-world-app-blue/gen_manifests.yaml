@@ -17,7 +17,7 @@ metadata:
     # This makes it easy to audit chart usage.
     helm.sh/chart: "hello-world-app-0.1.19"
     values: prod-blue
-    infra: mysql://east:8806/mysql-ldc
+    infra: mysql://east:8806/mysql-ldc2
 spec:
   # This shows how to use a simple value. This will look for a passed-in value
   # called restartPolicy. If it is not found, it will use the default value.
