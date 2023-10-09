@@ -104,9 +104,12 @@ spec:
       http:
         paths:
           - path: /
+            pathType: Prefix
             backend:
-              serviceName: my-example-v2
-              servicePort: 80
+              service:
+                name: my-example-v2
+                port:
+                  number: 80
 ---
 # Source: example-v2/templates/tests/test-connection.yaml
 apiVersion: v1
